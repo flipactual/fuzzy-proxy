@@ -1,0 +1,14 @@
+- title: true
+- shields:
+    style: 'flat-square'
+    shields:
+      - alt: 'flipactual'
+        image: 'badge/😋-flipactual-218AC7.svg'
+        link: 'https://www.flipactual.com/'
+      - alt: 'Travis'
+        image: 'travis/flipactual/fuzzy-proxy.svg'
+        link: 'https://travis-ci.org/flipactual/fuzzy-proxy/'
+- text: 'Creates an object with fuzzy matching capabilities.'
+- include: './docs/scripts.md'
+- jsdoc: 'index.js'
+- license: true
