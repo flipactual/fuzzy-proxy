@@ -28,3 +28,8 @@ test('Fuzzy matches methods', t => {
   t.plan(1);
   t.is(t.context.testObject.tripleD(13), 78);
 });
+
+test('Returns undefined when there are no matches', t => {
+  t.plan(1);
+  t.is(t.context.testObject.totesGarb, undefined);
+});

@@ -24,11 +24,15 @@ const { filter } = require('fuzzy');
  */
 function FuzzyProxy(objectToProxy) {
   return new Proxy(objectToProxy, {
-    get: (t, n) => t[
-      Object.getOwnPropertyNames(t).includes(n)
-        ? n
-        : filter(n, Object.getOwnPropertyNames(t))[0].string
-    ],
+    get: (t, n) => {
+      const properties = Object.getOwnPropertyNames(t);
+      const matches = filter(n, properties);
+      return t[
+        properties.includes(n) || !matches.length
+          ? n
+          : matches[0].string
+      ];
+    },
   });
 }
 
