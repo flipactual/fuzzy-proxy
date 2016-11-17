@@ -1,6 +1,6 @@
 {
   "name": "fuzzy-proxy",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Creates an object with fuzzy matching capabilities.",
   "repository": "flipactual/fuzzy-proxy",
   "license": "MIT",
@@ -16,6 +16,7 @@
   "scripts": {
     "test": "nyc ava",
     "coverage": "nyc report --reporter=html ava && open ./coverage/index.html",
+    "codecov": "nyc report --reporter=text-lcov > coverage.lcov && codecov",
     "lint": "eslint .",
     "readme": "emdaer"
   },
@@ -24,6 +25,7 @@
   },
   "devDependencies": {
     "ava": "^0.16.0",
+    "codecov": "^1.0.1",
     "emdaer": "^0.3.2",
     "eslint": "^3.4.0",
     "eslint-config-airbnb-base": "^5.0.3",
