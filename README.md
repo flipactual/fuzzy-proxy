@@ -2,6 +2,7 @@
 
 [![flipactual](https://img.shields.io/badge/😋-flipactual-218AC7.svg?style=flat-square)](https://www.flipactual.com/)
 [![Travis](https://img.shields.io/travis/flipactual/fuzzy-proxy.svg?style=flat-square)](https://travis-ci.org/flipactual/fuzzy-proxy/)
+[![Codecov](https://img.shields.io/codecov/c/github/flipactual/fuzzy-proxy.svg?style=flat-square)](https://codecov.io/gh/flipactual/fuzzy-proxy/)
 [![Node](https://img.shields.io/node/v/fuzzy-proxy.svg?style=flat-square)](http://npmjs.com/package/fuzzy-proxy)
 [![NPM](https://img.shields.io/npm/v/fuzzy-proxy.svg?style=flat-square)](http://npmjs.com/package/fuzzy-proxy)
 

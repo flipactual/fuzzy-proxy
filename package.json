@@ -1,6 +1,6 @@
 {
   "name": "fuzzy-proxy",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "Creates an object with fuzzy matching capabilities.",
   "repository": "flipactual/fuzzy-proxy",
   "license": "MIT",
