@@ -6,7 +6,7 @@
 [![Node](https://img.shields.io/node/v/fuzzy-proxy.svg?style=flat-square)](http://npmjs.com/package/fuzzy-proxy)
 [![NPM](https://img.shields.io/npm/v/fuzzy-proxy.svg?style=flat-square)](http://npmjs.com/package/fuzzy-proxy)
 
-Creates an object with fuzzy matching capabilities.
+Fuzzy match keys on objects
 
 ## Scripts
 

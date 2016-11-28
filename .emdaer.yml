@@ -17,7 +17,7 @@
       - alt: 'NPM'
         image: 'npm/v/fuzzy-proxy.svg'
         link: 'http://npmjs.com/package/fuzzy-proxy'
-- text: 'Creates an object with fuzzy matching capabilities.'
+- text: 'Fuzzy match keys on objects'
 - include: './docs/scripts.md'
 - jsdoc: 'index.js'
 - license: true
