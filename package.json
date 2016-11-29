@@ -1,6 +1,6 @@
 {
   "name": "fuzzy-proxy",
-  "version": "0.0.5",
+  "version": "0.0.6",
   "description": "Fuzzy match keys on objects",
   "repository": "flipactual/fuzzy-proxy",
   "license": "MIT",
@@ -12,19 +12,23 @@
   "engines": {
     "node": ">=6.0.0"
   },
-  "main": "index.js",
+  "main": "lib/index.js",
   "scripts": {
     "test": "nyc ava",
     "coverage": "nyc report --reporter=html ava && open ./coverage/index.html",
     "codecov": "nyc report --reporter=text-lcov > coverage.lcov && codecov",
     "lint": "eslint .",
-    "readme": "emdaer"
+    "readme": "emdaer",
+    "compile": "babel src -d lib",
+    "prepublish": "npm run compile"
   },
   "dependencies": {
     "fuzzy": "^0.1.1"
   },
   "devDependencies": {
     "ava": "^0.16.0",
+    "babel-cli": "^6.18.0",
+    "babel-preset-latest": "^6.16.0",
     "codecov": "^1.0.1",
     "emdaer": "^0.3.2",
     "eslint": "^3.4.0",
