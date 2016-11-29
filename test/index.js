@@ -1,5 +1,5 @@
 const test = require('ava');
-const FuzzyProxy = require('../');
+const FuzzyProxy = require('../src');
 
 test.beforeEach(t => {
   t.context.testObject = new FuzzyProxy({
