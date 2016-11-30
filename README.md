@@ -34,6 +34,12 @@ npm run lint
 npm run readme
 ```
 
+### `compile` – compile the code
+
+```sh
+npm run compile
+```
+
 <a name="FuzzyProxy"></a>
 
 ## FuzzyProxy

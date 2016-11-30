@@ -23,3 +23,9 @@ npm run lint
 ```sh
 npm run readme
 ```
+
+### `compile` – compile the code
+
+```sh
+npm run compile
+```
