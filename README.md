@@ -8,6 +8,37 @@
 
 Fuzzy match keys on objects
 
+<a name="FuzzyProxy"></a>
+
+## FuzzyProxy
+**Kind**: global class  
+<a name="new_FuzzyProxy_new"></a>
+
+### new FuzzyProxy(objectToProxy)
+FuzzyProxy - Creates an object with fuzzy matching capabilities
+
+**Returns**: <code>object</code> - Fuzzy proxied object  
+
+| Param | Type | Description |
+| --- | --- | --- |
+| objectToProxy | <code>object</code> | Object to apply fuzzy proxying to |
+
+**Example**  
+```js
+const bestObjectEver = new FuzzyProxy({
+  tripleDouble(number) {
+    return number * 3 * 2;
+  },
+  unicorn: '🦄',
+});
+
+bestObjectEver.uni
+// → '🦄'
+
+bestObjectEver.tripleD(13)
+// → 78
+```
+
 ## Scripts
 
 ### `test` – run the tests
@@ -38,37 +69,6 @@ npm run readme
 
 ```sh
 npm run compile
-```
-
-<a name="FuzzyProxy"></a>
-
-## FuzzyProxy
-**Kind**: global class  
-<a name="new_FuzzyProxy_new"></a>
-
-### new FuzzyProxy(objectToProxy)
-FuzzyProxy - Creates an object with fuzzy matching capabilities
-
-**Returns**: <code>object</code> - Fuzzy proxied object  
-
-| Param | Type | Description |
-| --- | --- | --- |
-| objectToProxy | <code>object</code> | Object to apply fuzzy proxying to |
-
-**Example**  
-```js
-const bestObjectEver = new FuzzyProxy({
-  tripleDouble(number) {
-    return number * 3 * 2;
-  },
-  unicorn: '🦄',
-});
-
-bestObjectEver.uni
-// → '🦄'
-
-bestObjectEver.tripleD(13)
-// → 78
 ```
 
 ## License
